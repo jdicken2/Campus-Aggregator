@@ -1,24 +1,3 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This application, originally prototyped for a software engineering course, will display selected social media feeds and allow users to manage which feeds they see from a pre-selected list. It is intended as an aggregator of feeds for use within institutions like universities (which have a wealth of student organizations), large companies (which maintain social media accounts for local offices), etc.
