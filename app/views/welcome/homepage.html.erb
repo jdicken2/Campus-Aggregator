@@ -32,7 +32,7 @@ footer {background: #aaa;color:white;}
     right: 0;
     background-color: #111;
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: 0.3s;
     padding-top: 60px;
 }
 
@@ -40,7 +40,7 @@ footer {background: #aaa;color:white;}
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: red;
     display: block;
     transition: 0.3s;
 }
@@ -56,6 +56,7 @@ footer {background: #aaa;color:white;}
     font-size: 36px;
     margin-left: 50px;
 }
+
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
@@ -74,10 +75,10 @@ footer {background: #aaa;color:white;}
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">Home</a>
-  <a href="#">Sign-in</a>
-  <a href="#">Settings</a>
-  <a href="#">About</a>
+  <a href="/welcome/homepage">Home</a>
+  <a href="/welcome/loginpage">Sign-in</a>
+  <a href="/welcome/settingpage">Settings</a>
+  <a href="/welcome/aboutpage">About</a>
 </div>
 
 <script>
@@ -86,7 +87,7 @@ function openNav() {
 }
 
 function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("mySidenav").style.width = "0px";
 }
 </script>
 
@@ -99,7 +100,7 @@ function closeNav() {
       <span class="title">Illinois Tech‏ @illinoistech hours ago</span>
       <p>Check out the Stress Free Zone schedule!
       </p>
-      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+     <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
     </li>
     <li class="collection-item avatar">
       <i class="material-icons circle green">insert_chart</i>
