@@ -50,3 +50,6 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #mateialize sass 
 gem 'materialize-sass'
+
+# Listen gem
+gem 'listen'
