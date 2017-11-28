@@ -8,5 +8,11 @@ Rails.application.routes.draw do
   get  '/login',        to: 'sessions#new'
   post  '/login',      to: 'sessions#create'
   delete '/logout',    to: 'sessions#destroy'
+
+  root 'welcome#homepage'
+  get  'welcome/homepage'
+  get  'welcome/loginpage'
+  get  'welcome/aboutpage'
+  get  'welcome/signuppage'
   resources :users
 end
