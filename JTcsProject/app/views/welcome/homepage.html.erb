@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: left
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+    text-align: left;
+}
+
+header {background: red;color:black;}
+footer {background: #aaa;color:white;}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: red;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+<header>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+  <h1 align="center">IIT Aggregate App</h1>
+</header>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="/welcome/homepage">Home</a>
+  <a href="/welcome/loginpage">Sign-in</a>
+  <a href="/welcome/settingpage">Settings</a>
+  <a href="/welcome/aboutpage">About</a>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0px";
+}
+</script>
+
+
+<article class="article">
+  <h1>Twitter</h1>
+    <ul class="collection">
+    <li class="collection-item avatar">
+      <i class="material-icons circle">folder</i>
+      <span class="title">Illinois Tech‏ @illinoistech hours ago</span>
+      <p>Check out the Stress Free Zone schedule!
+      </p>
+     <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+    </li>
+    <li class="collection-item avatar">
+      <i class="material-icons circle green">insert_chart</i>
+      <span class="title">Illinois Tech‏ @illinoistech Nov 24</span>
+      <p>Check out this cool IPRO event tomorrow! We are partnering with @CBCACchicago for #Chinatown Festival of trees! http://bit.ly/2zXz77D 
+      </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+    </li>
+    <li class="collection-item avatar">
+      <i class="material-icons circle red">play_arrow</i>
+      <span class="title">IlT Athletics‏ @IITathletics Oct 4</span>
+      <p>Men's Soccer takes on CUC today! Go Tech! Come out to Stuart at 7pm! #FearTheHawk
+      </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+    </li>
+    <li class="collection-item avatar">
+      <i class="material-icons circle red">play_arrow</i>
+      <span class="title">IIT Science‏ @IIT_Science Oct 4</span>
+      <p>New chem majors offer research--biosensor technology, green chemistry, biosensors to detect bioterrorism, more https://tinyurl.com/y94lwcp8 
+      </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+    </li>
+  </ul>
+</article>
+
+<article class="article">
+  <h1>Facebook</h1>
+  <ul class="collection">
+    <li class="collection-item avatar">
+      <i class="material-icons circle red">play_arrow</i>
+      <span class="title">Ethan Castro shared 2017 Chinatown Festival of Trees's event.
+November 18 at 1:08pm</span>
+      <p>Hey all, my IPRO is offering a unique service opportunity this coming weekend after Thanksgiving. You can read more details on the event page, but essentially, we'll need some extra hands to help move and assemble wooden pallet trees, as well as help community members make and hang up their wish tags. If you're around that weekend and are looking for a neat chance at helping a local community, consider helping us out!
+      </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+    </li>
+    <li class="collection-item avatar">
+      <i class="material-icons circle">folder</i>
+      <span class="title">Neha Patel shared The Bog @ IIT's event. November 17 at 7:29pm</span>
+      <p>Celebrate UB's birthday tomorrow at the BOG! There will be karaoke and raffles for UB swag! Cupcakes will be served.
+      </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+    </li>
+    <li class="collection-item avatar">
+      <i class="material-icons circle green">insert_chart</i>
+      <span class="title">Atul Viswanath shared Vedic Vision Society (IIT-Chicago)'s post.
+November 16 at 10:10am</span>
+      <p>Ever ran into the dilemma, where your heart says something and your mind says another?
+Edward Suda (a.k.a Yasodanandana das), an alumnus of IIT, is our guest lecturer this week. Join us as he enlightens you how to untangle yourself from this problem and take better decisions! Please be at Krishna House by 7pm.
+Google Maps location of venue: https://goo.gl/maps/LdaFU6dL1G42
+
+      </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+    </li>
+    <li class="collection-item avatar">
+      <i class="material-icons circle red">play_arrow</i>
+      <span class="title">Milton Par shared Union Board at Illinois Tech's event.
+November 14 at 7:36pm</span>
+      <p>You yearning to play with yarn like a cat? Come join Union Board in making your own yarn chandeliers in MTCC Welcome Center on November 15 at 4:00pm to 5:30pm.
+      </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+    </li>
+  </ul>
+</article>
+<footer align="left">Prototype demonstartion of Page</footer>
+</div>
+
+</body>
+</html>
